@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --out-dir docs"
+    "dev": "parcel src/index.pug",
+    "build": "parcel build src/index.pug --out-dir docs"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,9 @@
   "homepage": "https://github.com/joris-calvat/joris-calvat.github.io#readme",
   "dependencies": {
     "parcel-bundler": "^1.12.5"
+  },
+  "devDependencies": {
+    "pug": "^3.0.2",
+    "sass": "^1.32.12"
   }
 }
