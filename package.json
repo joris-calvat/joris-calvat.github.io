@@ -19,10 +19,12 @@
   },
   "homepage": "https://github.com/joris-calvat/joris-calvat.github.io#readme",
   "dependencies": {
+    "animejs": "^3.2.1",
     "parcel-bundler": "^1.12.5"
   },
   "devDependencies": {
     "pug": "^3.0.2",
-    "sass": "^1.32.12"
+    "sass": "^1.32.12",
+    "typescript": "^4.2.4"
   }
 }

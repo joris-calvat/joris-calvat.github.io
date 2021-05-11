@@ -3,12 +3,44 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-}
-
-.intro {
   background-color: #333;
-  .name {
+  font-size: 16px;
+}
+.main {
+  h1 {
+    margin-top: 2rem;
     background-color: #fffa;
-    color: #333;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    span {
+      display: block;
+      margin-left: 2rem;
+    }
+    .name {
+      color: #666;
+      font-size: 1.5rem;
+    }
+    .intro {
+      color: #333;
+      font-size: 1.2rem;
+    }
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    a {
+      color: #fff;
+      &::after {
+        display: inline;
+        content: '|';
+        margin: 0 0.5rem;
+      }
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
   }
 }
