@@ -248,28 +248,79 @@ a:hover {
   color: var(--accent);
 }
 
-/* ---------- Formation ---------- */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
+/* ---------- Points d'une expérience ---------- */
+.points li {
+  position: relative;
+  padding-left: 16px;
 }
 
-.card {
-  padding: 16px 18px;
-  border: 1px solid var(--line);
-  border-radius: 14px;
+.points li + li {
+  margin-top: 6px;
 }
 
-.card__title {
-  margin-top: 2px;
-  font-size: 1rem;
+.points li::before {
+  content: '';
+  position: absolute;
+  top: 0.8em;
+  left: 0;
+  width: 7px;
+  height: 2px;
+  background: var(--accent);
+}
+
+/* ---------- Compétences ---------- */
+.subhead {
+  margin: 24px 0 10px;
+  font-size: 0.8rem;
   font-weight: 700;
-  line-height: 1.35;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
 
-.card__sub {
-  margin-top: 2px;
+.section__title + .subhead {
+  margin-top: 0;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 6px 20px;
+  margin: 0;
+}
+
+.skills dt {
+  font-weight: 700;
+}
+
+.skills dd {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* ---------- Listes compactes (débuts, formation) ---------- */
+.compact li {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 2px 20px;
+}
+
+.compact li + li {
+  margin-top: 10px;
+}
+
+.compact__date {
+  padding-top: 2px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.compact__title {
+  font-weight: 700;
+}
+
+.compact__sub {
   font-style: italic;
   color: var(--muted);
 }
@@ -332,8 +383,13 @@ a:hover {
     justify-content: center;
   }
 
-  .grid {
+  .skills,
+  .compact li {
     grid-template-columns: 1fr;
+  }
+
+  .skills dd + dt {
+    margin-top: 6px;
   }
 
   .footer {
@@ -391,6 +447,14 @@ a:hover {
     margin-bottom: 12px;
   }
 
+  .subhead {
+    margin: 14px 0 6px;
+  }
+
+  .skills {
+    gap: 2px 20px;
+  }
+
   .entry + .entry {
     margin-top: 16px;
   }
@@ -405,11 +469,12 @@ a:hover {
   }
 
   .entry,
-  .card {
+  .compact li {
     break-inside: avoid;
   }
 
-  .section__title {
+  .section__title,
+  .subhead {
     break-after: avoid;
   }
 
