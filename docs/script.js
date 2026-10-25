@@ -84,6 +84,7 @@
     }
 
     svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+    svg.setAttribute('preserveAspectRatio', 'xMidYMid slice'); // couvre la zone même si elle change de taille (impression)
     svg.replaceChildren(path('art__cell', cells), path('art__line', lines), path('art__accent', accents));
     drawn = { width, height };
 

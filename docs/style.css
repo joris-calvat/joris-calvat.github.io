@@ -1,16 +1,16 @@
 /* ---------- Thème ---------- */
 :root {
-  --bg: #f3efe9;
+  --bg: #eef2f3;
   --card: #ffffff;
-  --ink: #1f2430;
-  --muted: #5f6675;
-  --line: #e4ded5;
-  --accent: #c2410c;
-  --chip: #f4f0ea;
-  --art-line: rgb(31 36 48 / 0.24);
-  --art-accent: #ea580c;
-  --art-cell: rgb(234 88 12 / 0.14);
-  --shadow: 0 1px 2px rgb(0 0 0 / 0.04), 0 12px 40px rgb(31 36 48 / 0.08);
+  --ink: #1b2a33;
+  --muted: #5a6b74;
+  --line: #dde5e8;
+  --accent: #0e5f6f;
+  --chip: #edf3f4;
+  --art-line: rgb(27 42 51 / 0.22);
+  --art-accent: #12a4a8;
+  --art-cell: rgb(18 164 168 / 0.14);
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.04), 0 12px 40px rgb(27 42 51 / 0.08);
 
   --pad-y: 56px;
   --pad-x: 64px;
@@ -23,16 +23,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #121418;
-    --card: #1b1e24;
-    --ink: #e8e5e0;
-    --muted: #a2a8b3;
-    --line: #2c3039;
-    --accent: #ff7a45;
-    --chip: #252932;
-    --art-line: rgb(232 229 224 / 0.16);
-    --art-accent: #ff7a45;
-    --art-cell: rgb(255 122 69 / 0.16);
+    --bg: #0f1619;
+    --card: #162026;
+    --ink: #e3eef0;
+    --muted: #9fb2b8;
+    --line: #26343b;
+    --accent: #4fd1c5;
+    --chip: #1e2b31;
+    --art-line: rgb(227 238 240 / 0.16);
+    --art-accent: #2dd4bf;
+    --art-cell: rgb(45 212 191 / 0.16);
     --shadow: 0 12px 40px rgb(0 0 0 / 0.35);
   }
 }
@@ -531,8 +531,8 @@ a:hover {
   }
 }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 720px) {
+/* ---------- Responsive (écran uniquement : une page A4 imprimée est plus étroite que 720px) ---------- */
+@media screen and (max-width: 720px) {
   .page {
     --pad-y: 36px;
     --pad-x: 16px;
@@ -603,11 +603,14 @@ a:hover {
   :root {
     --bg: #fff;
     --card: #fff;
-    --ink: #1f2430;
-    --muted: #5f6675;
-    --line: #e4ded5;
-    --accent: #c2410c;
-    --chip: #f4f0ea;
+    --ink: #1b2a33;
+    --muted: #5a6b74;
+    --line: #dde5e8;
+    --accent: #0e5f6f;
+    --chip: #edf3f4;
+    --art-line: rgb(27 42 51 / 0.22);
+    --art-accent: #12a4a8;
+    --art-cell: rgb(18 164 168 / 0.14);
   }
 
   @page {
@@ -632,7 +635,7 @@ a:hover {
   }
 
   .hero {
-    grid-template-columns: 1fr 140px;
+    grid-template-columns: 1fr 240px;
     margin: 0;
   }
 
@@ -641,10 +644,9 @@ a:hover {
   }
 
   .hero__visual {
-    min-height: 0;
+    min-height: 170px;
   }
 
-  .hero__art,
   .art-seed,
   .print-btn {
     display: none;
