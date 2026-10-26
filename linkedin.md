@@ -32,7 +32,7 @@ Responsable IT & Tech lead full-stack · Architecture & infrastructure · Angula
 ```text
 Près de 20 ans de développement web, de la conception à la mise en production.
 
-Formé au multimédia, j'ai évolué du développement en ESN au lead technique chez Ricardo.ch, puis à la responsabilité de l'informatique chez Traveljuice, en élargissant mon périmètre à l'architecture, à l'infrastructure, à la dataviz et à l'IA. J'y encadre l'équipe et en assure le leadership technique, tout en restant très impliqué dans le développement. Mon rôle consiste à relier les enjeux métier, techniques et opérationnels.
+Formé au multimédia, j'ai évolué du développement en ESN au lead technique chez Ricardo.ch, puis au poste de responsable IT chez Traveljuice, en élargissant mon périmètre à l'architecture, à l'infrastructure, à la dataviz et à l'IA. J'y encadre l'équipe et en assure le leadership technique, tout en restant très impliqué dans le développement. Mon rôle consiste à relier les enjeux métier, techniques et opérationnels.
 
 Généraliste avec une expertise front-end, je m'intéresse à tous les aspects du développement logiciel. En parallèle, je mène des projets personnels : développement de plateformes web, génération procédurale, création d'entreprise.
 
